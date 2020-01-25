@@ -1,4 +1,5 @@
 function drawgrid(cols,rows){
+    cellSize = canvasSize/rows + "px";
     for (i=1; i < (cols * rows) + 1; i++){
         cell = document.createElement('div');
         cell.id = i;
@@ -22,6 +23,7 @@ function reset(){
     while(isNaN(rows)){
         rows = prompt("Enter a number");
     }
+    
     drawgrid(rows,rows);
 }
 
