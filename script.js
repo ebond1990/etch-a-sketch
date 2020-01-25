@@ -5,8 +5,7 @@ function drawgrid(cols,rows){
         cell.id = i;
         cell.className = 'cell';
         cell.style.height = cellSize
-        cell.style.width = cellSize
-        
+        cell.style.width = cellSize;
         container.appendChild(cell);
         cell.addEventListener("mouseenter",fillCell);
     }
