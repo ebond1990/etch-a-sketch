@@ -1,0 +1,21 @@
+#reset{
+    top: 50%;
+}
+
+.button{
+    text-align: center;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filled-cell{
+    background-color: black;
+}
