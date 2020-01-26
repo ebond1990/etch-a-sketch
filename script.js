@@ -18,11 +18,10 @@ function fillCell(e){
 function reset(){
     const cells = Array.from(document.querySelectorAll(".cell"));
     cells.forEach(cell => cell.remove());
-    rows = prompt("Enter a number");
-    while(isNaN(rows)){
-        rows = prompt("Enter a number");
-    }
-    
+    rows = prompt("Enter a number")
+    if (!rows){
+        rows = cols;
+    };
     drawgrid(rows,rows);
 }
 
